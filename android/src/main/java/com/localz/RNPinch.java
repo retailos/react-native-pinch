@@ -31,7 +31,7 @@ import java.security.KeyManagementException;
 import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
 import java.security.cert.CertificateException;
-import java.net.URLDecoder;
+import java.net.URL;
 
 public class RNPinch extends ReactContextBaseJavaModule {
 
