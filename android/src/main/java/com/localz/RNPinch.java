@@ -108,8 +108,6 @@ public class RNPinch extends ReactContextBaseJavaModule {
                 JSONObject jsonHeaders = new JSONObject(httpResponse.headers.toString());
                 final String parsedBodyString = new String(httpResponse.bodyString, 'ISO-8859-1');
 
-                System.out.println(parsedBodyString);
-
                 response.putInt("status", httpResponse.statusCode);
                 response.putString("statusText", httpResponse.statusText);
                 response.putString("bodyString", parsedBodyString);
