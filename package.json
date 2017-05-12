@@ -1,6 +1,6 @@
 {
   "name": "react-native-pinch-stringencoding",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "description": "React Native fetch with SSL Pinning support",
   "main": "index.js",
   "scripts": {
