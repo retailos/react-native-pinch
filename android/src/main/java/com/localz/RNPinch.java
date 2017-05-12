@@ -110,7 +110,7 @@ public class RNPinch extends ReactContextBaseJavaModule {
 
                 response.putInt("status", httpResponse.statusCode);
                 response.putString("statusText", httpResponse.statusText);
-                response.putString("bodyString", parsedBodyString);
+                response.putString("bodyString", httpResponse.bodyString);
                 response.putMap("headers", Arguments.fromBundle(BundleJSONConverter.convertToBundle(jsonHeaders)));
 
                 return response;
