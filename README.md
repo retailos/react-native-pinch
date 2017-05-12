@@ -1,5 +1,7 @@
 # Pinch 👌
 
+This is a fork of `react-native-pinch`, the only difference is it decodes responses with NSIOSLatin1StringEncoding rather than NSUTF8Encoding as this was causing app crashes. PR sent to main repo.
+
 Callback and promise based HTTP client that supports SSL pinning for React Native.
 
 ## Installation
