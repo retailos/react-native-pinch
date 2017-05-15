@@ -31,6 +31,7 @@ import java.security.KeyManagementException;
 import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
 import java.security.cert.CertificateException;
+import java.net.URLDecoder;
 
 public class RNPinch extends ReactContextBaseJavaModule {
 
@@ -106,10 +107,11 @@ public class RNPinch extends ReactContextBaseJavaModule {
 
                 HttpResponse httpResponse = httpUtil.sendHttpRequest(request);
                 JSONObject jsonHeaders = new JSONObject(httpResponse.headers.toString());
+                String decodedResponseBody = URLDecoder.decode(httpResponse.bodyString, "IOS-8859-1");
 
                 response.putInt("status", httpResponse.statusCode);
                 response.putString("statusText", httpResponse.statusText);
-                response.putString("bodyString", httpResponse.bodyString);
+                response.putString("bodyString", decodedResponseBody);
                 response.putMap("headers", Arguments.fromBundle(BundleJSONConverter.convertToBundle(jsonHeaders)));
 
                 return response;
