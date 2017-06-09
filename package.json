@@ -1,6 +1,6 @@
 {
-  "name": "react-native-pinch-stringencoding",
-  "version": "0.0.32",
+  "name": "react-native-pinch-encoded",
+  "version": "0.0.33",
   "description": "React Native fetch with SSL Pinning support",
   "main": "index.js",
   "scripts": {
@@ -19,10 +19,8 @@
   ],
   "author": "Localz",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/localz/react-native-pinch/issues"
-  },
-  "homepage": "https://github.com/localz/react-native-pinch#readme",
+
+
   "devDependencies": {
     "react": "15.3.2",
     "react-native": "^0.34"
