@@ -1,6 +1,6 @@
 {
   "name": "react-native-pinch-encoded",
-  "version": "0.0.33",
+  "version": "0.0.34",
   "description": "React Native fetch with SSL Pinning support",
   "main": "index.js",
   "scripts": {
@@ -19,8 +19,6 @@
   ],
   "author": "Localz",
   "license": "MIT",
-
-
   "devDependencies": {
     "react": "15.3.2",
     "react-native": "^0.34"
