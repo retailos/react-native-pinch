@@ -15,6 +15,6 @@ android {
 }
 
 dependencies {
-    compile "com.facebook.android:facebook-android-sdk:4.+"
+    compile "com.facebook.android:facebook-android-sdk:4.28.0"
     compile "com.facebook.react:react-native:+"  // From node_modules
 }
